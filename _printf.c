@@ -2,7 +2,7 @@
 /**
  * _printf - print element
  * @format: format
- * Return: void
+ * Return: contador
  */
 int _printf(const char *format, ...)
 {
