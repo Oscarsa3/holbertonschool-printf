@@ -23,12 +23,14 @@ int fun_s(va_list args)
 	char *s;
 
 	s = va_arg(args, char *);
-	if (s == NULL)
-	return (0);
-	while (s[i])
+	if (s != NULL)
 	{
-		_putchar(s[i]);
-		i++;
+		while (s[i])
+		{
+			_putchar(s[i]);
+			i++;
+		}
+		return (i);
 	}
-	return (i);
+	return (0);
 }
