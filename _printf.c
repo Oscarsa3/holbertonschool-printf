@@ -9,15 +9,12 @@ int _printf(const char *format, ...)
 	int (*f)(va_list);
 	int contador = 0;
 	int i = 0;
-
 	va_list args;
 
 	va_start(args, format);
 
 	if (format == NULL)
-	{
 		return (-1);
-	}
 	while (format[i])
 	{
 		if (format[i] == '%')
