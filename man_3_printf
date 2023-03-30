@@ -1,0 +1,27 @@
+.TH man 1 "29/03/2023" "1.0" "Manual page"
+.SH NAME
+._printf funtion
+\- This function (_printf) produces output according to a format.
+
+.SH SYNOPSIS
+
+#include "main.h"
+
+int _printf(const char *format, ...)
+
+_printf[args]
+
+.SH DESCRIPTION
+
+Our _printf function print differents values(integers, character, strings, etc), and return the numbers of characters printed.
+
+There are many specifiers for various data types.
+
+%c - Character
+%s - String
+%d - Integer(base 10)
+%i - Integer(base 10)
+%% - Porcent symbol
+.SH AUTHORS
+
+Joselin, Guillermo and Oscar 
