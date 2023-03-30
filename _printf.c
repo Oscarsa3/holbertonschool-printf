@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * _printf - print element
  * @format: format
@@ -7,13 +8,12 @@
 int _printf(const char *format, ...)
 {
 	int (*f)(va_list);
-	int contador = 0;
-	int i = 0;
+	int contador = 0, i = 0;
 	va_list args;
 
 	va_start(args, format);
 
-	if (format == NULL || (format[i] == '%' && format[i + 1] == '\0'))
+	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
 	while (format[i])
 	{
@@ -21,26 +21,26 @@ int _printf(const char *format, ...)
 		{
 			if (format[i + 1] == '%')
 			{
-				contador = _putchar(format[i]);
-				i += 2;
+				contador += _putchar('%');
+				i = i + 2;
 			}
 			else
 			{
 				f = ob_funtions(&format[i + 1]);
-				if (f)
+				if (f != NULL)
 				{
 					contador += f(args);
 				}
 				else
 				{
-					contador = _putchar(format[i]) + _putchar(format[i + 1]);
+					contador += _putchar(format[i]) + _putchar(format[i + 1]);
 				}
-				i += 2;
+				i = i + 2;
 			}
 		}
 		else
 		{
-			contador = _putchar(format[i]);
+			contador += _putchar(format[i]);
 			i++;
 		}
 	}
