@@ -24,7 +24,7 @@ int fun_s(va_list args)
 
 	s = va_arg(args, char *);
 	if (s == NULL)
-		return(0);
+		return (0);
 	while (s[i])
 	{
 		_putchar(s[i]);
