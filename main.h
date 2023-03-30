@@ -1,8 +1,8 @@
 #ifndef HEADER
 #define HEADER
-#include <stdio.h>
 #include <stdarg.h>
 #include <stdlib.h>
+#include <stdio.h>
 int _putchar(char c);
 int _printf(const char *format, ...);
 int (*ob_funtions(const char *s))(va_list);
