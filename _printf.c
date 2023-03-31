@@ -16,25 +16,29 @@ int _printf(const char *format, ...)
 		return (-1);
 	while (format[i])
 	{
-		if (format[i] == '%' && format[i + 1] == '%')
-		{
-			contador += _putchar('%');
-			i = i + 2;
-		}
-		if (format[i] == '%' && format[i + 1] == '\0')
-			return (-1);
 		if (format[i] == '%')
 		{
-			f = ob_funtions(&format[i + 1]);
-			if (f != NULL)
+			if (format[i + 1] == '%')
 			{
-				contador += f(args);
+				contador += _putchar('%');
+				i = i + 2;
 			}
 			else
 			{
-				contador += _putchar(format[i]) + _putchar(format[i + 1]);
+				if (format[i])
+				{
+					f = ob_funtions(&format[i + 1]);
+					if (f != NULL)
+					{
+						contador += f(args);
+					}
+					else
+					{
+						contador += _putchar(format[i]) + _putchar(format[i + 1]);
+					}
+					i = i + 2;
+				}
 			}
-			i = i + 2;
 		}
 		contador += _putchar(format[i]);
 		i++;
