@@ -25,23 +25,23 @@ int _printf(const char *format, ...)
 			}
 			else
 			{
-				if (format[i])
+				f = ob_funtions(&format[i + 1]);
+				if (f != NULL)
 				{
-					f = ob_funtions(&format[i + 1]);
-					if (f != NULL)
-					{
-						contador += f(args);
-					}
-					else
-					{
-						contador += _putchar(format[i]) + _putchar(format[i + 1]);
-					}
-					i = i + 2;
+					contador += f(args);
 				}
+				else
+				{
+					contador += _putchar(format[i]) + _putchar(format[i + 1]);
+				}
+				i = i + 2;
 			}
 		}
-		contador += _putchar(format[i]);
-		i++;
+		else
+		{
+			contador += _putchar(format[i]);
+			i++;
+		}
 	}
 	va_end(args);
 	return (contador);
