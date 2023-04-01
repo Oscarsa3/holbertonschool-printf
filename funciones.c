@@ -9,7 +9,7 @@ int fun_c(va_list args)
 	char c;
 
 	c = va_arg(args, int);
-	putchar(c);
+	_putchar(c);
 	return (1);
 }
 /**
@@ -28,7 +28,7 @@ int fun_s(va_list args)
             s = "(null)";
 	while (s[i])
 	{
-		putchar(s[i]);
+		_putchar(s[i]);
 		i++;
 	}
 	return (i);
@@ -45,7 +45,7 @@ int fun_d(va_list args)
 
 	if (a < 0)
 	{
-		putchar('-');
+		_putchar('-');
 		a *= -1;
 	}
 	return (fun_int(a));

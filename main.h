@@ -3,7 +3,6 @@
 #include <stdarg.h>
 #include <stdlib.h>
 #include <stdio.h>
-#include <unistd.h>
 int _putchar(char c);
 int _printf(const char *format, ...);
 int (*ob_funtions(const char *s))(va_list);
