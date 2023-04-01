@@ -1,18 +1,27 @@
 #include "main.h"
-
+#include <unistd.h>
 /**
  * fun_u - cambia a caracter 
  * @i: The character to print
  * Return: On success 0.
  */
-int fun_u(unsigned int i)
+int fun_int(unsigned int i)
 {
-	int a = 0;
 	if (i / 10)
 	{
-		fun_u(i / 10);
+		fun_int(i / 10);
 	}
-	putchar((i % 10) + '0');
-	a++;
-	return(a);
+	_putchar((i % 10) + '0');
+	return (0);
+}
+/**
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
 }
