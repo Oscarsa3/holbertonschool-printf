@@ -23,9 +23,8 @@ int fun_s(va_list args)
 	char *s;
 
 	s = va_arg(args, char *);
-
 	if (s == NULL)
-            s = "(null)";
+		s = "(null)";
 	while (s[i])
 	{
 		_putchar(s[i]);
@@ -37,7 +36,7 @@ int fun_s(va_list args)
 /**
   * fun_d - funcion integer
   * @args: list
-  * @Return: size
+  * Return: size
   */
 int fun_d(va_list args)
 {

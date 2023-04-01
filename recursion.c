@@ -1,7 +1,7 @@
 #include "main.h"
 #include <unistd.h>
 /**
- * fun_u - cambia a caracter 
+ * fun_int - cambia a caracter
  * @i: The character to print
  * Return: On success 0.
  */
