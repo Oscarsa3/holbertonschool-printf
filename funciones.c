@@ -9,7 +9,7 @@ int fun_c(va_list args)
 	char c;
 
 	c = va_arg(args, int);
-	_putchar(c);
+	putchar(c);
 	return (1);
 }
 /**
@@ -23,12 +23,43 @@ int fun_s(va_list args)
 	char *s;
 
 	s = va_arg(args, char *);
-	if (s == NULL)
-		return (0);
-	while (s[i])
+	if (s != NULL)
 	{
-		_putchar(s[i]);
-		i++;
+		while (s[i])
+            {
+                putchar(s[i]);
+                i++;
+            }
+        return (i);
+        }
+        else
+        {
+            s = "(null)";
+             while (s[i])
+            {
+                putchar(s[i]);
+                i++;
+            }
+            return (i);
+        }
+}
+/**
+* fun_d - funcion integer
+* @args: lista
+* Return: size
+*/
+int fun_d(va_list args)
+{
+	int a = va_arg(args, int);
+
+	if (!a)
+	{
+		if (a < 0)
+		{
+			putchar('-');
+			a *= -1;
+		}
+	 	return (fun_u(a));
 	}
-	return (i);
+	return(0);
 }
