@@ -32,11 +32,11 @@ int _printf(const char *format, ...)
 			}
 			else
 			{
-				contador += _putchar(format[i]) + _putchar(format[i + 1]);
+				contador += putchar(format[i]) + putchar(format[i + 1]);
 			}
 			i = i + 2;
 		}
-		contador += _putchar(format[i]);
+		contador += putchar(format[i]);
 		i++;
 	}
 	va_end(args);
