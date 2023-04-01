@@ -42,14 +42,10 @@ int fun_d(va_list args)
 {
 	int a = va_arg(args, int);
 
-	if (!a)
+	if (a < 0)
 	{
-		if (a < 0)
-		{
-			putchar('-');
-			a *= -1;
-		}
-	 	return (fun_u(a));
+		putchar('-');
+		a *= -1;
 	}
-	return(0);
+	return (fun_u(a));
 }

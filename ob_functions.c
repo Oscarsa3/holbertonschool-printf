@@ -10,6 +10,8 @@ int (*ob_funtions(const char *s))(va_list)
 	verifica a[] = {
 		{"c", fun_c},
 		{"s", fun_s},
+		{"d", fun_d},
+		{"i", fun_d},
 		{NULL, NULL}
 	};
 	while (a[i].letra)
