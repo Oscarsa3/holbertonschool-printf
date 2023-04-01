@@ -23,30 +23,20 @@ int fun_s(va_list args)
 	char *s;
 
 	s = va_arg(args, char *);
-	if (s != NULL)
-	{
-		while (s[i])
-            {
-                putchar(s[i]);
-                i++;
-            }
-        return (i);
-        }
-        else
-        {
+
+	if (s == NULL)
             s = "(null)";
-             while (s[i])
-            {
-                putchar(s[i]);
-                i++;
-            }
-            return (i);
-        }
+	while (s[i])
+	{
+		putchar(s[i]);
+		i++;
+	}
+	return (i);
 }
 /**
 * fun_d - funcion integer
 * @args: lista
-* Return: size
+* Return: 0
 */
 int fun_d(va_list args)
 {
