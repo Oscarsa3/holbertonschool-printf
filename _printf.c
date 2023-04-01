@@ -20,8 +20,8 @@ int _printf(const char *format, ...)
 		{
 			if (format[i + 1] == '%')
 			{
-				contador += _putchar('%');
-				i = i + 2;
+				contador += putchar('%');
+				i += 2;
 			}
 			else
 			{
@@ -32,14 +32,14 @@ int _printf(const char *format, ...)
 				}
 				else
 				{
-					contador += _putchar(format[i]) + _putchar(format[i + 1]);
+					contador += putchar(format[i]) + putchar(format[i + 1]);
 				}
-				i = i + 2;
+				i += 2;
 			}
 		}
 		else
 		{
-			contador += _putchar(format[i]);
+			contador += putchar(format[i]);
 			i++;
 		}
 	}
