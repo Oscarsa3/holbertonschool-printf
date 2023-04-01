@@ -7,10 +7,12 @@
  */
 int fun_u(unsigned int i)
 {
-    if (i / 10)
-    {
-        fun_u(i / 10);
-    }
-    putchar((i % 10) + '0');
-    return(0);
+	int a = 0;
+	if (i / 10)
+	{
+		fun_u(i / 10);
+	}
+	putchar((i % 10) + '0');
+	a++;
+	return(a);
 }
