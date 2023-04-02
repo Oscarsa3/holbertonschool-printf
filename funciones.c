@@ -64,11 +64,11 @@ int fun_d(va_list args)
 */
 char *convert(int num, int base)
 {
-	static char *array = "0123456789";
-	static char buffer[11];
+	static char *array = "0123456789abcdef";
+	static char buffer[50];
 	char sign = 0;
 	char *ptr;
-	unsigned long n = num;
+	unsigned int n = num;
 
 	if (num < 0)
 	{
