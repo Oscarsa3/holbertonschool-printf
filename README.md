@@ -8,6 +8,7 @@
 %s: imprime cadena de caracteres.<br>
 %d: imprime numeros enteros en base (10).<br>
 %i: Imprime numeros enteros en base (10).<br>
+%%: Imprime el simbolo %.<br>
 </div>
 
 
