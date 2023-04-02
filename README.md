@@ -4,10 +4,10 @@
 <div> Esta funcion nos permite imprimir en pantalla segun el especificador que nos manden</div>
 <h2 align="rigth"> Especificadores:   </h2>
 <div>
-%c: Imprime solo caracter
-%s: imprime cadena de caracteres.
-%d: imprime numeros enteros en base (10).
-%i: Imprime numeros enteros en base (10).
+%c: Imprime solo caracter.<br>
+%s: imprime cadena de caracteres.<br>
+%d: imprime numeros enteros en base (10).<br>
+%i: Imprime numeros enteros en base (10).<br>
 </div>
 
 
