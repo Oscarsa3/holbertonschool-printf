@@ -40,12 +40,48 @@ int fun_s(va_list args)
   */
 int fun_d(va_list args)
 {
-	int a = va_arg(args, int);
+	char *texto;
+	int a, res;
 
-	if (a < 0)
+	a = va_arg(args, int);
+	texto = convert(a, 10);
+	if (texto)
 	{
-		_putchar('-');
-		a *= -1;
+		for (res = 0; texto[res] != '\0'; res++)
+		{
+			_putchar(texto[res]);
+		}
 	}
-	return (fun_int(a));
+	else
+		texto = "NULL";
+	return (res);
+}
+/**
+* convert - funcion integer
+* @num: numero a convertir
+* @base: base (10)
+* Return: size
+*/
+char *convert(int num, int base)
+{
+	static char *array = "0123456789";
+	static char buffer[11];
+	char sign = 0;
+	char *ptr;
+	unsigned long n = num;
+
+	if (num < 0)
+	{
+		n = -num;
+		sign = '-';
+	}
+	ptr = &buffer[49];
+	*ptr = '\0';
+	do {
+		*--ptr = array[n % base];
+		n /= base;
+	} while (n != 0);
+	if (sign)
+		*--ptr = sign;
+	return (ptr);
 }

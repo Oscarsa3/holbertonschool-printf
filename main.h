@@ -10,6 +10,7 @@ int fun_c(va_list);
 int fun_s(va_list);
 int fun_d(va_list);
 int fun_int(unsigned int i);
+char *convert(int num, int base);
 /**
   * struct verificar - tipo de estructura
   * @letra: verificamos el caracter para ver si llamamos su funcion
