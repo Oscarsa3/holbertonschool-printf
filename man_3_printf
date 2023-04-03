@@ -1,0 +1,90 @@
+
+.TH C-printf
+
+
+.SH NAME: _printf funcion .- This function (_printf) produces output according to a format.
+                             (pequeña y breve descripción de lo que hace)
+
+
+.SH SYNOPSIS: #include "main.h"
+              int _printf(const char *format, ...)
+	      _printf[args]
+              Ejemplos de como se pueden utilizar nuestros comandos con sus parámetros.
+	      Algunas flags requieren info adicional
+	      [Les podemos colocar] [corchetes] [de manera] [opcional]
+
+
+.SH DESCRIPTION: Our _printf function prints differents values(integers, character, strings, etc), and return the numbers of characters printed.
+                 There are many specifiers for various data types.
+
+                 %c - Character
+		 %s - String
+	         %d - Integer(base 10)
+                 %i - Integer(base 10)
+		 %% - Porcent symbol
+
+                 test_script.-  Write detailed description of the tool here.
+		                This script can perform all these tasks and must be executed as root user.
+			        More information on the tasks performed is explained below:
+                                ........
+				........
+				
+                                (Se nos explica de una manera más detallada que es lo realiza nuestro programa)
+				Algunas referencias y ejemplos son válidos.
+
+
+.SH EJEMPLOS:  (De como se pueden utilizar los parámetros en nuestro programa)
+
+               man ls
+	       man -e
+
+
+.SH DESCRIPCIÓN AÚN MÁS DETALLADA DE COMO USAR EL PROGRAMA
+
+
+.SH PREDETERMINED VALUES:
+                           man -- busca  las  páginas  del  manual  deseadas en los índices bases de datos caché.
+			          Si la busqueda es infructuosa, se ejecuta...
+
+.SH FILES:  -- funciones.c
+            -- main.h
+	    -- ob_functions.c
+	    -- _printf.c
+            -- _putchar.c
+
+
+.SH OPTIONS:
+               -h|--help    ---  Prints help
+
+               -l --local file (activa el modo ¨local"...)
+
+               -L (mayúscula) importante tener en cuenta si es min o mayú
+  
+               -D   Esta opción se usa generalmente para restaurar...
+ 
+               -7,  --ascii
+
+
+.SH SEE ALSO:
+                Manuales para complementar las funciones
+                mandb(8), manpath(1), ascii(7).
+
+
+
+.SH HISTORY / AUTHOR
+
+
+.SH CREDITS: This man page is created only for our current project "printf" by Joselyn, Oscar and Guillermo from Cohort 20 - Holberton Perú 
+
+
+.SH REPORTE DE ERRORES
+
+
+
+"A man page is created using the very old roff markup language. It has commands (read markers) for various titles and sections".
+
+.TH – This should be first command in the man file. It is used to specify title heading of the man page.
+.SH – Section Heading.
+.B – It is used to display the text next to it in bold.
+.TP – It is used to display information about an argument (flag) to the command.
+.BR – It is used to display text in bold and in the normal Roman font.
