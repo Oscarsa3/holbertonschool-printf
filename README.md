@@ -16,7 +16,7 @@
 </div>
 <h2> Desarrollado por: </h2>
 <div>
-Nombres:<br>
+<h4 background-color="purple">Nombres:<br>
 <br>
   Guillermo Alvarado.<br>
   Oscar Salinas.<br>
