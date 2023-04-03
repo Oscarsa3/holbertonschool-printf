@@ -15,9 +15,9 @@
   %%: Imprime el simbolo %.<br>
 </div>
 <h2> Desarrollado por: </h2>
-<div>
-<h4 background-color="purple">Nombres:<br>
+<div class="p-3 mb-2 bg-secondary text-white">.bg-Nombre</div>
 <br>
+<div>
   Guillermo Alvarado.<br>
   Oscar Salinas.<br>
   Joselin Rivas.<br>
