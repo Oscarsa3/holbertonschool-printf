@@ -1,38 +1,54 @@
 
-.TH C-printf
-
-
-.SH NAME: _printf function .- This function produces output according to our format.
-           
-
-
-.SH SYNOPSIS: #include "main.h"
-	      #include <stdlib.h>
-	      #include <stdio.h>
-	      #include <stdarg.h>
-	      
-              int _printf(const char *format, ...);
-
-
-.SH DESCRIPTION: Our _printf function prints differents values(integers, character, strings, etc), and return the numbers of characters printed.
-                 There are many specifiers for different data types.
-
-                 c - Prints a character output standart 
-		 s - Prints a character string
-	         d - Prints and integer (base 10)
-                 i - Prints an integer with sign (base 10)
-		 %% - Prints a porcent symbol
-
-                 Example.- _printf ("the number is: %d", 98); 
-
-
-.SH FILES:  -- funciones.c
-            -- main.h
-	    -- ob_functions.c
-	    -- _printf.c
-            -- _putchar.c
-
-
-.SH CREDITS: This man page is created only for our current project "printf" by Joselin Rivas, Oscar Salinas and Guillermo Alvarado from Cohort 20 - 2023
-             Holberton Perú.
-
+.TH C-printf. 
+.br
+.SH NAME: 		
+.br
+			_printf function .- This function produces output according to our format.
+.br
+.SH SYNOPSIS: 		
+.br
+			#include "main.h"
+.br
+			#include <stdlib.h>
+.br
+			#include <stdio.h>
+.br
+			#include <stdarg.h>
+.br
+			int _printf(const char *format, ...);
+.br
+.SH DESCRIPTION: 	
+.br
+			Our _printf function prints differents values(integers, character, strings, etc), and return the numbers of characters printed.
+.br
+			There are many specifiers for different data types.
+.br
+			c - Prints a character output standart
+.br
+			s - Prints a character string
+.br
+			d - Prints and integer (base 10)
+.br
+			i - Prints an integer with sign (base 10)
+.br
+			%% - Prints a porcent symbol
+.br
+			Example.- _printf ("the number is: %d", 98);
+.br
+.SH FILES:  
+.br
+			-- funciones.c
+.br
+			-- main.h
+.br
+	    		-- ob_functions.c
+.br
+			-- _printf.c
+.br
+			-- _putchar.c
+.br
+.SH CREDITS:
+.br
+			This man page is created only for our current project "printf" by Joselin Rivas, Oscar Salinas and Guillermo Alvarado from Cohort 20 - 2023
+   		        Holberton Perú.
+.br
